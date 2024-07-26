@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    padding: 5%;
+    background-color: #163A24;
+}
+
+/* ============Start Header============= */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    color: white;
+    padding: 10px;
+    background-color: #198C36;
+    border: none;
+    border-radius: 15px;
+}
+
+/* =============Header End============== */
+
+/* =============Start Hero============== */
+
+
+
+/* =============Hero End================ */

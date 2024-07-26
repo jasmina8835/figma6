@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+.container{
+    height: 100vh;
+    padding-top: 200px;
+    background-color: rgb(0, 123, 255);
+}
+
+.box{
+    width: 100px;
+    height: 200px;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+
+.box_child{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: 20px;
+    top: 10px;
+     animation: circle 4s infinite forwards;
+}
+
+@keyframes circle{
+     from {
+          opacity: 1;
+          transform: translateY(0);
+     }
+
+     to {
+        opacity: 0;
+        transform: translateY(120px);
+          
+     }
+} */
+
+
+/* .content{
+    margin: 100px 200px;
+}
+
+button{
+    padding: 10px 25px;
+}
+
+button:hover .i{
+    animation: circle 4s infinite forwards;
+     
+}
+
+@keyframes circle{
+    from {
+        transform: translate(0) rotate(0);
+   }
+
+   to {
+    transform: translate(1000px) rotate(360deg);
+   }
+} */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(226, 226, 226);
+    position: relative;
+}
+
+.mountains{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mountain{
+    width: 0;
+    height: 0;
+    border-left: 350px solid transparent;
+    border-bottom: 300px solid blue;
+    border-right: 330px solid transparent;
+    padding-bottom: 345px;
+}
+
+.moun1 {
+    position: absolute;
+    left: 100px;
+}
+
+.moun3 {
+    position: absolute;
+    right: 50px;
+}
+
+.sun_box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    right: 300px;
+    top: 20px;
+    animation: circle 8s infinite linear alternate;
+}
+@keyframes circle{
+    from {
+         opacity: 0;
+         transform: translateY(470px);
+    }
+
+    to {
+       opacity: 1;
+       transform: translateY(0);
+         
+    }
+} 
+
+.clouds{
+    display: flex;  
+}
+
+.cloud_box{
+    width: 170px;
+    height: 80px;
+    background-color: grey;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    animation: circleee 8s infinite linear alternate;
+    border-radius: 30px;
+    position: relative;
+}
+.cloud_box::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    bottom: 10px;
+    background-color: grey;
+}
+
+.cloud_box::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 0;
+    background-color: grey;
+    left: 100px;
+}
+
+@keyframes circleee{
+    from {
+         transform: translateX(0);
+    }
+
+    to {
+       transform: translateX(1135px);
+         
+    }
+} 
+
+.cloud_box2{
+    position: absolute;
+    right: 10px;
+    top: 300px;
+     animation: circlee 10s infinite linear alternate;
+}
+
+@keyframes circlee{
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(1140px);
+         
+    }
+} 
